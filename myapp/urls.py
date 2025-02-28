@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import *
+from myapp import views
 
 urlpatterns = [
-
+    path('', views.user_list),
+    path('Add/', views.Adduser)
 ]
